@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Prompt Interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="prompt-container">
+
+        <header class="prompt-header">
+            <h1>✨ AI Prompt Interface</h1>
+            <p>Ask AI anything and get helpful responses</p>
+        </header>
+
+        <main class="prompt-box">
+
+            <label for="promptInput">Enter your prompt</label>
+
+            <textarea
+                id="promptInput"
+                placeholder="Example: Explain artificial intelligence in simple words..."
+            ></textarea>
+
+            <button onclick="generateResponse()">Generate Response</button>
+
+            <div class="response-box" id="responseBox">
+                <strong>AI Response:</strong>
+                <p>Your response will appear here.</p>
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
