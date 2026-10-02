@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Analytics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <h2>🤖 AI Analytics</h2>
+
+            <nav>
+                <a href="#" class="active">Dashboard</a>
+                <a href="#">AI Insights</a>
+                <a href="#">Reports</a>
+                <a href="#">Analytics</a>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+
+            <header class="topbar">
+                <div>
+                    <h1>Analytics Dashboard</h1>
+                    <p>AI-powered insights from your data</p>
+                </div>
+
+                <button id="generateBtn">Generate Insight</button>
+            </header>
+
+            <!-- Statistics -->
+            <section class="stats">
+
+                <div class="stat-card">
+                    <h3>Total Users</h3>
+                    <p>24,580</p>
+                    <span>+12.5%</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>AI Queries</h3>
+                    <p>8,420</p>
+                    <span>+18.2%</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Reports Generated</h3>
+                    <p>1,248</p>
+                    <span>+9.8%</span>
+                </div>
+
+                <div class="stat-card">
+                    <h3>Accuracy</h3>
+                    <p>94.6%</p>
+                    <span>+3.4%</span>
+                </div>
+
+            </section>
+
+            <!-- Analytics -->
+            <section class="analytics-section">
+
+                <div class="chart-card">
+                    <h2>Monthly AI Usage</h2>
+
+                    <div class="chart">
+                        <div class="bar" style="height: 45%;">
+                            <span>Jan</span>
+                        </div>
+
+                        <div class="bar" style="height: 60%;">
+                            <span>Feb</span>
+                        </div>
+
+                        <div class="bar" style="height: 52%;">
+                            <span>Mar</span>
+                        </div>
+
+                        <div class="bar" style="height: 75%;">
+                            <span>Apr</span>
+                        </div>
+
+                        <div class="bar" style="height: 68%;">
+                            <span>May</span>
+                        </div>
+
+                        <div class="bar" style="height: 90%;">
+                            <span>Jun</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- AI Insights -->
+                <div class="insight-card">
+                    <h2>💡 AI Insight</h2>
+
+                    <p id="insightText">
+                        Click "Generate Insight" to analyze your dashboard data.
+                    </p>
+                </div>
+
+            </section>
+
+            <!-- Recent Activity -->
+            <section class="activity-card">
+
+                <h2>Recent AI Activity</h2>
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Activity</th>
+                            <th>Status</th>
+                            <th>Time</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Sales Report Analysis</td>
+                            <td class="success">Completed</td>
+                            <td>10 min ago</td>
+                        </tr>
+
+                        <tr>
+                            <td>User Behavior Analysis</td>
+                            <td class="success">Completed</td>
+                            <td>25 min ago</td>
+                        </tr>
+
+                        <tr>
+                            <td>Performance Prediction</td>
+                            <td class="processing">Processing</td>
+                            <td>40 min ago</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
