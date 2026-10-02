@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 90%;
+    max-width: 800px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+header {
+    background: #6c5ce7;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+header h1 {
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+.recommendation-container {
+    padding: 30px;
+}
+
+.recommendation-card {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #f8f7ff;
+    border: 1px solid #e3e0ff;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.card-icon {
+    font-size: 55px;
+    background: #e8e5ff;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+.card-content {
+    flex: 1;
+}
+
+.card-content h2 {
+    color: #333;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.tags span {
+    background: #e8e5ff;
+    color: #5145b5;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+}
+
+button {
+    background: #6c5ce7;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .recommendation-container {
+        padding: 20px;
+    }
+
+    .recommendation-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tags {
+        justify-content: center;
+    }
+}
