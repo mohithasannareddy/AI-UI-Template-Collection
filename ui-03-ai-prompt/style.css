@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f4f8;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.prompt-container {
+    width: 90%;
+    max-width: 700px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+}
+
+.prompt-header {
+    background: #5b5ce2;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.prompt-header h1 {
+    margin-bottom: 8px;
+}
+
+.prompt-header p {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.prompt-box {
+    padding: 30px;
+}
+
+.prompt-box label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.prompt-box textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    resize: vertical;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.prompt-box textarea:focus {
+    border-color: #5b5ce2;
+}
+
+.prompt-box button {
+    width: 100%;
+    margin-top: 15px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #5b5ce2;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.prompt-box button:hover {
+    opacity: 0.9;
+}
+
+.response-box {
+    margin-top: 25px;
+    padding: 20px;
+    background: #eef0ff;
+    border-radius: 10px;
+    color: #333;
+}
+
+.response-box strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+@media (max-width: 600px) {
+    .prompt-container {
+        width: 95%;
+    }
+
+    .prompt-box {
+        padding: 20px;
+    }
+}
